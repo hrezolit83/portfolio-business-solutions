@@ -18,9 +18,9 @@
         <a href="./index.html" class="header-logo">Web<span class="logo-span">Studio</span></a>
         
         <ul class="header-menu-list">
-            <li class="header-menu-item"><a class="header-menu-link current" href="./index.html">Studio</a></li>
-            <li class="header-menu-item"><a class="header-menu-link" href="">Portfolio</a></li>
-            <li class="header-menu-item"><a class="header-menu-link" href="">Contacts</a></li>
+            <li id="studio" class="header-menu-item"><a class="header-menu-link current" href="./index.html">Studio</a></li>
+            <li id="portfolio" class="header-menu-item"><a class="header-menu-link" href="./index.html">Portfolio</a></li>
+            <li id="contacts" class="header-menu-item"><a class="header-menu-link" href="./index.html">Contacts</a></li>
         </ul>
       </nav>
            <address class="address">
@@ -565,7 +565,7 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop" >
+    <div class="backdrop">
         <div class="modal">
             <button type="button" class="modal-btn">
                 <svg width="8" height="8" class="modal-btn-icon">
@@ -580,7 +580,7 @@
                             <div class="modal-input-wrap">
                                 <input 
                                 type="text" 
-                                name="user-name" 
+                                name="username" 
                                 class="modal-input"
                                 id="user-name"
                                 >
@@ -594,7 +594,7 @@
                             <div class="modal-input-wrap">
                                 <input 
                                 type="text" 
-                                name="user-tel" 
+                                name="tel" 
                                 class="modal-input"
                                 id="user-phone"
                                 >
@@ -608,7 +608,7 @@
                             <div class="modal-input-wrap">
                                 <input 
                                 type="text" 
-                                name="user-mail" 
+                                name="mail" 
                                 class="modal-input"
                                 id="user-email"
                                 >
@@ -625,7 +625,7 @@
                     <input 
                         class="check-input visually-hidden" 
                         type="checkbox" 
-                        name="user-privacy" 
+                        name="userprivacy" 
                         id="user-privacy"
                         value="true">
                     <label class="check-text" for="user-privacy">
@@ -640,9 +640,11 @@
                     </label>
                        
                 </div>
-                <button class="modal-send-btn" type="button"><span class="btn-txt">Send</span></button>
+                <button class="modal-send-btn" type="submit"><span class="btn-txt">Send</span></button>
             </form>
         </div>
     </div>
+
+    <script src="./js/script.js" type="module"></script>
 </body>
 </html>
