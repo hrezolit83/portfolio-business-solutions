@@ -46,10 +46,11 @@ function onSubmitForm(event) {
 
 const headerNavigationMenu = document.querySelector('.header-menu-list');
 const currentLink = document.querySelector('.current');
-// const headerMenuLink = 
+const headerMenuLink = document.querySelector('.header-menu-link');
 
     headerNavigationMenu.addEventListener('click', clickOnHeader);
     function clickOnHeader(event) {
-        currentLink.classList.remove('current');
         event.target.classList.add('current');
+        headerMenuLink.classList.remove('current');
+        
     }
