@@ -44,3 +44,12 @@ function onSubmitForm(event) {
     modalForm.reset();
 }
 
+const headerNavigationMenu = document.querySelector('.header-menu-list');
+const currentLink = document.querySelector('.current');
+// const headerMenuLink = 
+
+    headerNavigationMenu.addEventListener('click', clickOnHeader);
+    function clickOnHeader(event) {
+        currentLink.classList.remove('current');
+        event.target.classList.add('current');
+    }
